@@ -1,0 +1,26 @@
+# AWS Traffic Prediction System - Terraform Variables
+# Copy this file to terraform.tfvars and customize the values
+
+# AWS Configuration
+aws_region = "us-east-1"
+environment = "prod"
+
+# S3 Configuration
+s3_bucket_name = "traffic-prediction-new-images-bucket"
+
+# DynamoDB Configuration
+dynamodb_table_name = "traffic-prediction-new-analysis-results"
+
+# SNS Configuration
+sns_topic_traffic_alerts = "TrafficAlerts"
+sns_topic_high_priority = "HighPriorityAlerts"
+
+# SageMaker Configuration
+sagemaker_model_name = "yolov8-traffic-detection"
+
+# Lambda Configuration
+lambda_timeout = 300
+lambda_memory_size = 1024
+
+# Traffic Analysis Configuration
+congestion_threshold = 0.7
